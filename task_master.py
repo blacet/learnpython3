@@ -76,7 +76,7 @@ def test ():
     # 绑定端口5000, 设置验证码'abc'
     #manager = QueueManager(address=('', 5000), authkey=b'abc')
     # win7需要写ip地址
-    manager = QueueManager(address=('172.16.73.89', 5000), authkey=b'abc')
+    manager = QueueManager(address=('127.0.0.1', 5000), authkey=b'abc')
     # 启动Queue
     manager.start()
     # 获得通过网络访问的Queue对象
